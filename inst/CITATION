@@ -1,0 +1,29 @@
+pkgVer <- function(pkg) {
+    if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
+    ver <- meta$Version
+    paste0('https://github.com/lcolladotor/', pkg, ' - R package version ', ver)
+}
+
+c(
+
+    bibentry(bibtype="manual",
+        title = "biocthis demo for Mina Ryten",
+        author = personList(
+            as.person("lcolladotor")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        url = "http://www.bioconductor.org/packages/minathis",
+        note = pkgVer('minathis'),
+        doi = '10.18129/B9.bioc.minathis'
+    ),
+    bibentry(bibtype="article",
+        title = "biocthis demo for Mina Ryten",
+        author = personList(
+            as.person("lcolladotor")
+        ),
+        year = 2020,
+        journal = "bioRxiv",
+        doi = "10.1101/TODO",
+        url = "https://www.biorxiv.org/content/10.1101/TODO"
+    )
+)

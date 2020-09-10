@@ -1,18 +1,28 @@
 Package: minathis
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: biocthis demo for Mina Ryten
+Version: 0.99.0
+Date: 2020-09-10
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Leonardo",
+           family = "Collado-Torres",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "lcolladotor@gmail.com",
+           comment = c(ORCID = "0000-0003-2140-308X"))
+Description: Live demo of biocthis for Mina Ryten and David Zhang et al.
+License: Artistic-2.0
+URL: https://github.com//lcolladotor/minathis
+BugReports: https://support.bioconductor.org/t/minathis
+biocViews: Software
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-URL: https://github.com/lcolladotor/minathis
-BugReports: https://github.com/lcolladotor/minathis/issues
+Suggests: 
+    testthat,
+    covr,
+    knitr,
+    BiocStyle,
+    knitcitations,
+    sessioninfo,
+    rmarkdown
+VignetteBuilder: knitr
