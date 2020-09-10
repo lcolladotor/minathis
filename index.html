@@ -82,29 +82,37 @@
 <h2 class="hasAnchor">
 <a href="#installation-instructions" class="anchor"></a>Installation instructions</h2>
 <p>Get the latest stable <code>R</code> release from <a href="http://cran.r-project.org/">CRAN</a>. Then install <code>minathis</code> using from <a href="http://bioconductor.org/">Bioconductor</a> the following code:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="kw">if</span> (!<span class="fu"><a href="https://rdrr.io/r/base/ns-load.html">requireNamespace</a></span>(<span class="st">"BiocManager"</span>, <span class="kw">quietly</span> <span class="kw">=</span> <span class="fl">TRUE</span>)) {
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="co">if</span> (<span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/ns-load.html">requireNamespace</a></span>(<span class="st">"BiocManager"</span>, quietly = <span class="fl">TRUE</span>)) {
     <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"BiocManager"</span>)
 }
 
-<span class="kw pkg">BiocManager</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html">install</a></span>(<span class="st">"minathis"</span>)</pre></div>
+<span class="kw">BiocManager</span>::<span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html">install</a></span>(<span class="st">"minathis"</span>)
+</pre></div>
 <p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="kw pkg">BiocManager</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html">install</a></span>(<span class="st">"lcolladotor/minathis"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="kw">BiocManager</span>::<span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html">install</a></span>(<span class="st">"lcolladotor/minathis"</span>)
+</pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>This is a basic example which shows you how to solve a common problem:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st">"minathis"</span>)
-<span class="co">## basic example code</span></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st"><a href="https://github.com//lcolladotor/minathis">"minathis"</a></span>)
+<span class="co">## basic example code</span>
+</pre></div>
 <p>What is special about using <code>README.Rmd</code> instead of just <code>README.md</code>? You can include R chunks like so:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span>(<span class="no">cars</span>)
+<div class="sourceCode" id="cb4"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span>(<span class="kw">cars</span>)
 <span class="co">#&gt;      speed           dist       </span>
 <span class="co">#&gt;  Min.   : 4.0   Min.   :  2.00  </span>
 <span class="co">#&gt;  1st Qu.:12.0   1st Qu.: 26.00  </span>
 <span class="co">#&gt;  Median :15.0   Median : 36.00  </span>
 <span class="co">#&gt;  Mean   :15.4   Mean   : 42.98  </span>
 <span class="co">#&gt;  3rd Qu.:19.0   3rd Qu.: 56.00  </span>
-<span class="co">#&gt;  Max.   :25.0   Max.   :120.00</span></pre></div>
+<span class="co">#&gt;  Max.   :25.0   Max.   :120.00</span>
+</pre></div>
 <p>You’ll still need to render <code>README.Rmd</code> regularly, to keep <code>README.md</code> up-to-date.</p>
 <p>You can also embed plots, for example:</p>
 <p><img src="reference/figures/README-pressure-1.png" width="100%"></p>
@@ -114,7 +122,8 @@
 <h2 class="hasAnchor">
 <a href="#citation" class="anchor"></a>Citation</h2>
 <p>Below is the citation output from using <code><a href="https://rdrr.io/r/utils/citation.html">citation('minathis')</a></code> in R. Please run this yourself to check for any updates on how to cite <strong>minathis</strong>.</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="fu"><a href="https://rdrr.io/r/utils/citation.html">citation</a></span>(<span class="st">'minathis'</span>), <span class="kw">bibtex</span> <span class="kw">=</span> <span class="fl">TRUE</span>)
+<div class="sourceCode" id="cb5"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="fu"><a href="https://rdrr.io/r/utils/citation.html">citation</a></span>(<span class="st">"minathis"</span>), bibtex = <span class="fl">TRUE</span>)
 <span class="co">#&gt; </span>
 <span class="co">#&gt; lcolladotor (2020). _biocthis demo for Mina Ryten_. doi:</span>
 <span class="co">#&gt; 10.18129/B9.bioc.minathis (URL:</span>
@@ -146,7 +155,8 @@
 <span class="co">#&gt;     journal = {bioRxiv},</span>
 <span class="co">#&gt;     doi = {10.1101/TODO},</span>
 <span class="co">#&gt;     url = {https://www.biorxiv.org/content/10.1101/TODO},</span>
-<span class="co">#&gt;   }</span></pre></div>
+<span class="co">#&gt;   }</span>
+</pre></div>
 <p>Please note that the <code>minathis</code> was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.</p>
 </div>
 <div id="code-of-conduct" class="section level2">
@@ -224,7 +234,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.9000.</p>
 </div>
 
       </footer>
