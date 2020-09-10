@@ -77,7 +77,7 @@ Please run this yourself to check for any updates on how to cite
 **minathis**.
 
 ``` r
-print(citation('minathis'), bibtex = TRUE)
+print(citation("minathis"), bibtex = TRUE)
 #> 
 #> lcolladotor (2020). _biocthis demo for Mina Ryten_. doi:
 #> 10.18129/B9.bioc.minathis (URL:

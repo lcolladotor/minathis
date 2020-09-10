@@ -72,7 +72,7 @@ Below is the citation output from using `citation('minathis')` in R. Please
 run this yourself to check for any updates on how to cite __minathis__.
 
 ```{r 'citation', eval = requireNamespace('minathis')}
-print(citation('minathis'), bibtex = TRUE)
+print(citation("minathis"), bibtex = TRUE)
 ```
 
 Please note that the `minathis` was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.
